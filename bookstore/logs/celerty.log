@@ -1,0 +1,26 @@
+[2021-09-29 12:55:39,551: INFO/MainProcess] Connected to redis://127.0.0.1:6379/14
+[2021-09-29 12:55:39,571: INFO/MainProcess] mingle: searching for neighbors
+[2021-09-29 12:55:40,610: INFO/MainProcess] mingle: all alone
+[2021-09-29 12:55:40,628: WARNING/MainProcess] /root/Envs2107Pro/django2107env/lib/python3.7/site-packages/celery/fixups/django.py:204: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  leak, never use this setting in production environments!''')
+
+[2021-09-29 12:55:40,628: INFO/MainProcess] worker@localhost.localdomain ready.
+[2021-09-29 12:56:03,846: INFO/MainProcess] Task send_sms_code[de679faf-e546-4c84-abe6-8c9ab0c7b8fc] received
+[2021-09-29 12:56:04,362: WARNING/ForkPoolWorker-1] {'statusCode': '000000', 'templateSMS': {'smsMessageSid': 'd76ce5e5c23e43d0b24b186b3b3015a9', 'dateCreated': '20210929205604'}}
+[2021-09-29 12:56:04,363: WARNING/ForkPoolWorker-1] 
+
+[2021-09-29 12:56:04,363: WARNING/ForkPoolWorker-1] 0
+[2021-09-29 12:56:04,363: WARNING/ForkPoolWorker-1] 
+
+[2021-09-29 12:56:04,363: INFO/ForkPoolWorker-1] 发送验证码短信[正常][ mobile: 18801252113 ]
+[2021-09-29 12:56:04,364: INFO/ForkPoolWorker-1] Task send_sms_code[de679faf-e546-4c84-abe6-8c9ab0c7b8fc] succeeded in 0.5157546440022998s: 0
+[2021-09-29 13:12:37,246: INFO/MainProcess] Task send_sms_code[03cf5da1-b2c0-44ad-a6cd-43771b40dc71] received
+[2021-09-29 13:12:37,683: WARNING/ForkPoolWorker-1] {'statusCode': '000000', 'templateSMS': {'smsMessageSid': 'eab753f80dab4b80bb450f431c2f195c', 'dateCreated': '20210929211237'}}
+[2021-09-29 13:12:37,683: WARNING/ForkPoolWorker-1] 
+
+[2021-09-29 13:12:37,683: WARNING/ForkPoolWorker-1] 0
+[2021-09-29 13:12:37,683: WARNING/ForkPoolWorker-1] 
+
+[2021-09-29 13:12:37,683: INFO/ForkPoolWorker-1] 发送验证码短信[正常][ mobile: 18801252113 ]
+[2021-09-29 13:12:37,684: INFO/ForkPoolWorker-1] Task send_sms_code[03cf5da1-b2c0-44ad-a6cd-43771b40dc71] succeeded in 0.43632307500229217s: 0
