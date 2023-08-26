@@ -1,5 +1,5 @@
 from django.db import models
-from users.models import UserProfile
+from apps.users.models import UserProfile
 
 
 class UserLeavingMessage(models.Model):
@@ -28,6 +28,7 @@ class UserLeavingMessage(models.Model):
         db_table = 'db_user_message'
         verbose_name = '用户留言'
         verbose_name_plural = verbose_name
+        app_label = 'users_options'
 
     def __str__(self):
         return self.subject
@@ -48,6 +49,7 @@ class UserAddress(models.Model):
         db_table = 'db_user_address'
         verbose_name = '收货地址'
         verbose_name_plural = verbose_name
+        app_label = 'users_options'
 
     def __str__(self):
         return self.address

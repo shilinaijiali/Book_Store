@@ -1,7 +1,7 @@
 from django.db.models import Q
 from rest_framework import serializers
 
-from goods.models import GoodsCategory, Goods, GoodsImage, HotSearchWords, GoodsCategoryBrand, IndexAd, Banner
+from apps.goods.models import GoodsCategory, Goods, GoodsImage, HotSearchWords, GoodsCategoryBrand, IndexAd, Banner
 
 
 class GoodsCategorySer(serializers.ModelSerializer):

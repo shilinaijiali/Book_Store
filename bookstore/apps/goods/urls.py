@@ -1,7 +1,9 @@
 from django.urls import re_path
 from rest_framework.routers import DefaultRouter
 
-from goods import views
+from apps.goods import views
+
+# from goods import views
 
 urlpatterns = [
     # re_path(r'^categories/$', views.GoodsCategoryView.as_view()),

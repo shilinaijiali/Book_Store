@@ -5,8 +5,8 @@ from rest_framework.permissions import IsAuthenticated
 # get_user_model 用户获取可验证的用户模型类
 from rest_framework.response import Response
 
-from users_options.models import UserLeavingMessage, UserAddress
-from users_options.seriazliers import UserUpdateSerializer, LeavingSerializer, AddressSerializer
+from apps.users_options.models import UserLeavingMessage, UserAddress
+from apps.users_options.seriazliers import UserUpdateSerializer, LeavingSerializer, AddressSerializer
 
 User = get_user_model()     # 获取用户模型类
 

@@ -4,9 +4,9 @@ from rest_framework import serializers
 from django.db import transaction
 
 from bookstore.settings import ALIPAY_APPID, app_private_key_string, alipay_public_key_string
-from goods.models import Goods
-from goods.serializers import GoodsSerializer
-from trade.models import ShoppingCart, OrderInfo, OrderGoods
+from apps.goods.models import Goods
+from apps.goods.serializers import GoodsSerializer
+from apps.trade.models import ShoppingCart, OrderInfo, OrderGoods
 
 
 class ShopCartDetailSerializer(serializers.ModelSerializer):
@@ -54,7 +54,8 @@ class OrderGoodsOneSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-from alipay import AliPay, AliPayConfig           # 导入支付包相关的类
+from alipay import Alipay
+# , AliPayConfig)           # 导入支付包相关的类
 from bookstore import settings
 
 class OrderCreateSerializer(serializers.ModelSerializer):
@@ -69,12 +70,12 @@ class OrderCreateSerializer(serializers.ModelSerializer):
     alipay_url = serializers.SerializerMethodField(read_only=True)
 
     def get_alipay_url(self, obj):
-        alipay = AliPay(
+        alipay = Alipay(
             appid=ALIPAY_APPID,
             app_private_key_string=app_private_key_string,
             alipay_public_key_string=alipay_public_key_string,
             sign_type='RSA2',   # 指定加密方式，一般为RSA2或RSA
-            config=AliPayConfig(timeout=15),  # 选择性进行添加，表示请求等待时间为15秒，超时的话会返回错误信息
+            # config=AliPayConfig(timeout=15),  # 选择性进行添加，表示请求等待时间为15秒，超时的话会返回错误信息
         )
         order_string = alipay.api_alipay_trade_wap_pay(
             out_trade_no=obj.order_sn,

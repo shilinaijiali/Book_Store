@@ -5,9 +5,9 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 from rest_framework.viewsets import ReadOnlyModelViewSet
 
-from goods.filters import GoodsFilter
-from goods.models import GoodsCategory, Goods, HotSearchWords, Banner
-from goods.serializers import GoodsCategorySer, GoodsSerializer, HotSearchSerializer, IndexCategorySerializer, \
+from apps.goods.filters import GoodsFilter
+from apps.goods.models import GoodsCategory, Goods, HotSearchWords, Banner
+from apps.goods.serializers import GoodsCategorySer, GoodsSerializer, HotSearchSerializer, IndexCategorySerializer, \
     BannerSerializer, GoodsDetailSerializer
 
 

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from goods.models import GoodsCategory, Goods
+from apps.goods.models import GoodsCategory, Goods
 
 # Register your models here.
 admin.site.index_title = 'sixstar'
@@ -9,7 +9,7 @@ admin.site.site_header = 'sixstar'
 
 @admin.register(GoodsCategory)
 class GoodsCategoryAdmin(admin.ModelAdmin):
-    list_display = ['name','desc']
+    list_display = ['name', 'desc']
 
 
 @admin.register(Goods)

@@ -1,21 +1,22 @@
 from datetime import datetime
 
-from alipay import AliPay, AliPayConfig
+from alipay import Alipay
+# , AliPayConfig)
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
-from rest_framework_jwt.authentication import JSONWebTokenAuthentication
-
+# from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework_simplejwt.authentication import JWTAuthentication
 from bookstore.settings import ALIPAY_APPID, app_private_key_string, alipay_public_key_string
-from trade.models import ShoppingCart, OrderInfo, OrderGoods
-from trade.serializers import ShopCartSerializer, ShopCartDetailSerializer, OrderGoodsSerializer, OrderCreateSerializer
+from apps.trade.models import ShoppingCart, OrderInfo, OrderGoods
+from apps.trade.serializers import ShopCartSerializer, ShopCartDetailSerializer, OrderGoodsSerializer, OrderCreateSerializer
 
 
 class ShoppingCartViewSet(ModelViewSet):
     queryset = ShoppingCart.objects.all()
     permission_classes = [IsAuthenticated]
-    authentication_classes = [JSONWebTokenAuthentication]
+    authentication_classes = [JWTAuthentication]
     serializer_class = ShopCartSerializer
     lookup_field = 'goods_id'
 
@@ -44,7 +45,7 @@ class OrderViewSet(ModelViewSet):
         3. create增加
     """
     permission_classes = [IsAuthenticated]
-    authentication_classes = [JSONWebTokenAuthentication]
+    authentication_classes = [JWTAuthentication]
     serializer_class = None
 
     def get_queryset(self):
@@ -83,12 +84,12 @@ class AlipayView(APIView):
         for key, value in request.GET.items():
             processed_dict[key] = value
         sign = processed_dict.pop("sign", None)     # 取出钥匙，在之后进行交易号验证的时候使用
-        alipay = AliPay(
+        alipay = Alipay(
             appid=ALIPAY_APPID,
             app_private_key_string=app_private_key_string,
             alipay_public_key_string=alipay_public_key_string,
             sign_type='RSA2',   # 指定加密方式，一般为RSA2或RSA
-            config=AliPayConfig(timeout=15),  # 选择性进行添加，表示请求等待时间为15秒，超时的话会返回错误信息
+            # config=AliPayConfig(timeout=15),  # 选择性进行添加，表示请求等待时间为15秒，超时的话会返回错误信息
         )
         verify_result = alipay.verify(processed_dict, sign)
         # verify中传入验证的订单信息以及钥匙
