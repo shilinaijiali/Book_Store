@@ -1,7 +1,7 @@
 from django_filters import rest_framework as filters
 from django.db.models import Q
 
-from goods.models import Goods
+from apps.goods.models import Goods
 
 
 class GoodsFilter(filters.FilterSet):

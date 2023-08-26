@@ -31,6 +31,7 @@ class GoodsCategory(models.Model):
     class Meta:
         verbose_name = "商品类别"
         verbose_name_plural = verbose_name
+        app_label = 'goods'
 
     def __str__(self):
         return self.name
@@ -50,6 +51,7 @@ class GoodsCategoryBrand(models.Model):
         verbose_name = "宣传品牌"
         verbose_name_plural = verbose_name
         db_table = "goods_goodsbrand"
+        app_label = 'goods'
 
     def __str__(self):
         return self.name
@@ -82,6 +84,7 @@ class Goods(models.Model):
     class Meta:
         verbose_name = '商品信息'
         verbose_name_plural = verbose_name
+        app_label = 'goods'
 
     def __str__(self):
         return self.name
@@ -98,6 +101,7 @@ class GoodsImage(models.Model):
     class Meta:
         verbose_name = '商品轮播'
         verbose_name_plural = verbose_name
+        app_label = 'goods'
 
     def __str__(self):
         return self.goods.name
@@ -115,6 +119,7 @@ class Banner(models.Model):
     class Meta:
         verbose_name = '首页轮播'
         verbose_name_plural = verbose_name
+        app_label = 'goods'
 
     def __str__(self):
         return self.goods.name
@@ -130,6 +135,7 @@ class IndexAd(models.Model):
     class Meta:
         verbose_name = '首页广告'
         verbose_name_plural = verbose_name
+        app_label = 'goods'
 
     def __str__(self):
         return self.goods.name
@@ -146,6 +152,7 @@ class HotSearchWords(models.Model):
     class Meta:
         verbose_name = '热搜排行'
         verbose_name_plural = verbose_name
+        app_label = 'goods'
 
     def __str__(self):
         return self.keywords

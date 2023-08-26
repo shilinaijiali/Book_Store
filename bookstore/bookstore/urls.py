@@ -1,4 +1,4 @@
-"""BookStore URL Configuration
+"""bookstore URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -14,16 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include, re_path
+from django.urls import path, include, re_path
 from django.views.static import serve
-from bookstore import settings
+# from bookstore import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('users.urls')),
-    path('', include('users_options.urls')),
-    path('', include('goods.urls')),
-    path('', include('trade.urls')),
+    path('', include('apps.users.urls')),
+    path('', include('apps.users_options.urls')),
+    path('', include('apps.goods.urls')),
+    path('', include('apps.trade.urls')),
     re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),     # 富文本编辑器
     # re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
     # re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),

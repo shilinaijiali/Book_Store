@@ -2,8 +2,8 @@ import re
 
 from rest_framework import serializers
 
-from goods.serializers import GoodsSerializer
-from users.models import UserProfile, SmsModel, UserFav
+from apps.goods.serializers import GoodsSerializer
+from apps.users.models import UserProfile, SmsModel, UserFav
 
 from datetime import datetime, timedelta
 

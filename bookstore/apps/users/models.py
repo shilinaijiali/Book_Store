@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 # Create your models here.
-from goods.models import Goods
+from apps.goods.models import Goods
 
 
 class UserProfile(AbstractUser):
@@ -27,6 +27,7 @@ class UserProfile(AbstractUser):
     class Meta:
         verbose_name = "用户信息"
         verbose_name_plural = verbose_name
+        app_label = 'users'
 
     def __str__(self):
         return self.username
@@ -61,6 +62,7 @@ class UserFav(models.Model):
     class Meta:
         verbose_name = '用户收藏'
         verbose_name_plural = verbose_name
+        app_label = 'users'
 
         # 多个字段作为一个联合唯一索引
         unique_together = ("user", "goods")

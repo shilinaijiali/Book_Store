@@ -3,16 +3,16 @@
 # import ssl
 # ssl._create_default_https_context =ssl._create_stdlib_context # 解决Mac开发环境下，网络错误的问题
 
-from bookstore.utils.yuntongxun.CCPRestSDK import REST
+from utils.yuntongxun.CCPRestSDK import REST
 
 # 说明：主账号，登陆云通讯网站后，可在"控制台-应用"中看到开发者主账号ACCOUNT SID
-_accountSid = '8a216da87a332d53017b2fad25674702'
+_accountSid = '2c94811c89e22612018a20f4ffbb0dc6'
 
 # 说明：主账号Token，登陆云通讯网站后，可在控制台-应用中看到开发者主账号AUTH TOKEN
-_accountToken = 'c9d1690d846642e3b62c40f01fa9c90a'
+_accountToken = 'f696285012f343028b7d3cf278906f64'
 
 # 请使用管理控制台首页的APPID或自己创建应用的APPID
-_appId = '8aaf07087b3e7403017b4e3fe3f90322'
+_appId = '2c94811c89e22612018a20f5012a0dcd'
 
 # 说明：请求地址，生产环境配置成app.cloopen.com
 _serverIP = 'app.cloopen.com'

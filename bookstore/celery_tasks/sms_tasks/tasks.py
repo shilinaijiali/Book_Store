@@ -4,9 +4,10 @@ import logging
 from utils.yuntongxun.ccp_sms import CCP
 from celery_tasks.main import celery_app
 
-logger = logging.getLogger('django')        # 日志器获取，用户日志信息输入
+logger = logging.getLogger('django')  # 日志器获取，用户日志信息输入
 
-@celery_app.task(name='send_sms_code')      # 将被装饰的函数，做为异步任务提交给celery
+
+@celery_app.task(name='send_sms_code')  # 将被装饰的函数，做为异步任务提交给celery
 def send_sms_code(mobile, sms_code):
     """发送短信验证码"""
     try:
@@ -23,4 +24,3 @@ def send_sms_code(mobile, sms_code):
         else:
             logger.warning("发送验证码短信[失败][ mobile: %s ]" % mobile)
             return resu
-

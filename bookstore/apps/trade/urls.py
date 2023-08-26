@@ -1,7 +1,8 @@
 from django.urls import re_path
-from goods.urls import router
+# from goods.urls import router
 
 from . import views
+from apps.goods.urls import router
 
 urlpatterns = [
     re_path(r'^shoppingCart/clear$', views.ShoppingCartDelView.as_view()),

@@ -1,0 +1,8 @@
+.DS_Store          # Mac系统下生成的文件，应该被忽略
+Thumbs.db          # Windows系统下生成的文件，应该被忽略
+__pycache__/       # Python中的缓存文件，应该被忽略
+*.pyc              # Python编译文件，应该被忽略
+**/migrations/
+
+.idea/
+/logs/

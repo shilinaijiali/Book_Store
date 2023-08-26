@@ -8,13 +8,15 @@ from rest_framework.generics import CreateAPIView
 from django_redis import get_redis_connection
 from rest_framework.authentication import BaseAuthentication
 from rest_framework.viewsets import ModelViewSet
-from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+# from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+from rest_framework_simplejwt.authentication import JWTAuthentication
+
 from rest_framework_jwt.settings import api_settings
 
 
-from users.models import SmsModel, UserToken, UserProfile, UserFav
+from apps.users.models import SmsModel, UserToken, UserProfile, UserFav
 from utils.yuntongxun.ccp_sms import CCP
-from users.serializers import Sms_CodeSerializer, UserRegSerializer, LoginSerializer, UserFavDetailSerializer, \
+from apps.users.serializers import Sms_CodeSerializer, UserRegSerializer, LoginSerializer, UserFavDetailSerializer, \
     UserFavSerializer
 from celery_tasks.sms_tasks import tasks
 
@@ -41,7 +43,7 @@ class SmscodeView(APIView):
         result = tasks.send_sms_code.delay(mobile, code)
         # 发送成功时，返回0，否则非0
         # - celery -A xxxx.main worker -l info 启动
-        # - celery multi start -A xxxx.main worker -l info --logfile=./logs/celery.log # 守护进程
+        # - celery multi start -A xxxx.main worker -l info --logfile=./log/celery.log # 守护进程
         SmsModel.objects.create(mobile=mobile, code=code)
         redis_conn = get_redis_connection('verify_code')    # 实例化一个redis连接对象
         redis_pipeline = redis_conn.pipeline()  # 实例化一个redis的管道对象
@@ -150,7 +152,7 @@ class LoginView(APIView):
 class UserFavViewset(ModelViewSet):
     queryset = UserFav.objects.all()
     serializer_class = UserFavSerializer
-    authentication_classes = [JSONWebTokenAuthentication]
+    authentication_classes = [JWTAuthentication]
     lookup_field = 'goods_id'
 
     def get_queryset(self):

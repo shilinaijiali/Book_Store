@@ -1,6 +1,6 @@
 import os
 from django.template import loader
-from goods.models import Goods
+from apps.goods.models import Goods
 
 
 def generate_static_index():
