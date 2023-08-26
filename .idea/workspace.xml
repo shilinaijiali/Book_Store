@@ -4,47 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="981ec98b-99fc-4602-826d-5044c94a5c2a" name="更改" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="981ec98b-99fc-4602-826d-5044c94a5c2a" name="更改" comment="shilin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/goods/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/goods/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/goods/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/goods/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/goods/cron.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/goods/cron.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/goods/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/goods/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/goods/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/goods/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/goods/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/goods/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/goods/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/goods/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/trade/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/trade/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/trade/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/trade/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/trade/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/trade/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/trade/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/trade/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/trade/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/trade/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/users/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/users/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/users/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/users_options/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/users_options/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/users_options/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/users_options/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/apps/users_options/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/users_options/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/bookstore/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/bookstore/asgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstore/bookstore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/bookstore/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/bookstore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/bookstore/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/bookstore/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/bookstore/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/celery_tasks/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/celery_tasks/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/celery_tasks/sms_tasks/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/celery_tasks/sms_tasks/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/logs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/log/esbook.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/logs/celerty.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/logs/celery.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/logs/esbook.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/scripts/generate_index_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/scripts/generate_index_html.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/static/rest_framework/docs/js/highlight.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/static/rest_framework/docs/js/highlight.pack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/utils/yuntongxun/ccp_sms.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/utils/yuntongxun/ccp_sms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore/log/esbook.log" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/log/esbook.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,32 +35,35 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2UN9wBtMFn6AKev80gGuTo0sn4S" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;shilin&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Book_Store/bookstore&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "git-widget-placeholder": "shilin",
+    "last_opened_file_path": "F:/Book_Store/bookstore/bookstore/settings.py",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="BookStore" type="Python.DjangoServer" factoryName="Django server">
       <module name="Book_Store" />
@@ -147,6 +114,10 @@
       <workItem from="1692958986265" duration="1069000" />
       <workItem from="1693027400889" duration="9143000" />
       <workItem from="1693038727662" duration="7578000" />
+      <workItem from="1693046539643" duration="7664000" />
+      <workItem from="1693061765328" duration="212000" />
+      <workItem from="1693061988611" duration="452000" />
+      <workItem from="1693062458257" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <option name="closed" value="true" />
@@ -188,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1692851364973</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="shilin">
+      <option name="closed" value="true" />
+      <created>1693047011137</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693047011137</updated>
+    </task>
+    <task id="LOCAL-00007" summary="shilin">
+      <option name="closed" value="true" />
+      <created>1693047030038</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693047030038</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,12 +205,24 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/bookstore" />
     </ignored-roots>
     <MESSAGE value="..." />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="shilin" />
+    <option name="LAST_COMMIT_MESSAGE" value="shilin" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Anaconda3/envs/conda_bookstore/Lib/site-packages/django/template/backends/django.py</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
