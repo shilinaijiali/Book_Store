@@ -215,7 +215,7 @@ LOGGING = {
 # CORS
 CORS_ORIGIN_WHITELIST = (
     'http://192.168.1.4',
-    'http://192.168.232.128',
+    'http://192.168.232.129',
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 
