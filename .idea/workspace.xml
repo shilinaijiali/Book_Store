@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="981ec98b-99fc-4602-826d-5044c94a5c2a" name="更改" comment="shilin">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore/apps/trade/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/trade/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore/apps/trade/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/apps/trade/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstore/bookstore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/bookstore/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore/bookstore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/bookstore/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstore/log/esbook.log" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/log/esbook.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,17 +57,17 @@
     "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
     "WebServerToolWindowPanel.toolwindow.show.size": "false",
     "git-widget-placeholder": "shilin",
-    "last_opened_file_path": "F:/Book_Store/bookstore/bookstore/settings.py",
+    "last_opened_file_path": "F:/Anaconda3/Scripts/conda.exe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django 服务器.conda">
     <configuration name="BookStore" type="Python.DjangoServer" factoryName="Django server">
       <module name="Book_Store" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +92,35 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="conda" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Book_Store" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="bookstore.settings" />
+      </envs>
+      <option name="SDK_HOME" value="F:\Anaconda3\envs\conda_bookstore\python.exe" />
+      <option name="SDK_NAME" value="conda_bookstore" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django 服务器.BookStore" />
+      <item itemvalue="Django 服务器.conda" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -117,7 +149,8 @@
       <workItem from="1693046539643" duration="7664000" />
       <workItem from="1693061765328" duration="212000" />
       <workItem from="1693061988611" duration="452000" />
-      <workItem from="1693062458257" duration="54000" />
+      <workItem from="1693062458257" duration="385000" />
+      <workItem from="1693110732699" duration="13088000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <option name="closed" value="true" />
@@ -175,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693047030038</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="shilin">
+      <option name="closed" value="true" />
+      <created>1693062801112</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693062801112</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

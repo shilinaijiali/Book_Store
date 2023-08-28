@@ -30,7 +30,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -52,6 +51,7 @@ INSTALLED_APPS = [
     'apps.users_options.apps.UsersOptionsConfig',
     'apps.goods.apps.GoodsConfig',
     'apps.trade.apps.TradeConfig',
+    'drf_yasg',  # 添加 drf-yasg
 ]
 
 MIDDLEWARE = [
@@ -84,7 +84,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'bookstore.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -125,9 +124,8 @@ CACHES = {
     }
 }
 
-SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'   # 指定存储方式为混合存储
-SESSION_CACHE_ALIAS = 'session'     # 指定session使用的默认缓存库
-
+SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'  # 指定存储方式为混合存储
+SESSION_CACHE_ALIAS = 'session'  # 指定session使用的默认缓存库
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -147,7 +145,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -160,7 +157,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = False
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
@@ -243,25 +239,26 @@ JWT_AUTH = {
 # 在django2.1之后的版本就不再支持xadmin的使用
 # 替代品：simpleui，tyadmin（配置很麻烦，NJS环境，配置好之后还需要修改tyadmin底层代码的配置参数）
 
-SIMPLEUI_LOGO = 'http://192.168.1.183:8000/static/logo/logo.png'    # 指定logo图片
-SIMPLEUI_HOME_INFO = False      # 关闭广告链接
+SIMPLEUI_LOGO = 'http://192.168.1.183:8000/static/logo/logo.png'  # 指定logo图片
+SIMPLEUI_HOME_INFO = False  # 关闭广告链接
 
 # 作业：将所有模型注册到admin页面中，注意要使用simpleui
 # 把logo替换成自己喜欢的图片
 
 ACCESS_KEY_ID = "LTAI5tC4tgasYviV4rBMUMdd"  # 用户的ID，此处为阿里云创建的子用户的ID
-ACCESS_KEY_SECRET = "CMaaZCAm2YXAY0olmcC0M6kfeSri1q"    # 相当于密码，加密盐
+ACCESS_KEY_SECRET = "CMaaZCAm2YXAY0olmcC0M6kfeSri1q"  # 相当于密码，加密盐
 END_POINT = "oss-cn-beijing.aliyuncs.com"
 PREFIX_URL = 'http://'  # 协议头
-BUCKET_NAME = "django07lq"     # 使用创建的bucket的名称
+BUCKET_NAME = "django07lq"  # 使用创建的bucket的名称
 ALIYUN_OSS_CNAME = ""  # 自定义域名，如果不需要可以不填写
 BUCKET_ACL_TYPE = "public-read"  # private, public-read, public-read-write
-DEFAULT_FILE_STORAGE = 'aliyun_oss2_storage.backends.AliyunMediaStorage'    # 此参数表示上传的文件要存放的路径，云存储的路径
-STATICFILES_STORAGE = 'aliyun_oss2_storage.backends.AliyunStaticStorage'    # 静态文件的存放路径
+DEFAULT_FILE_STORAGE = 'aliyun_oss2_storage.backends.AliyunMediaStorage'  # 此参数表示上传的文件要存放的路径，云存储的路径
+STATICFILES_STORAGE = 'aliyun_oss2_storage.backends.AliyunStaticStorage'  # 静态文件的存放路径
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # 静态文件的目录
 
 # 安装阿里云存储所需要的依赖包
 # pip install django-aliyun-oss2-storage
@@ -279,17 +276,16 @@ CKEDITOR_CONFIGS = {
 }
 CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，如果使用了云存储服务，则此处值为空即可
 
-
 # alipay
 # 以下参数用于支付时支付宝开发平台的验证
 ALIPAY_APPID = '2021000117685876'
 app_private_key_string = open(os.path.join(BASE_DIR, 'apps/trade/keys/app_private_key.pem'), 'r').read()
 alipay_public_key_string = open(os.path.join(BASE_DIR, 'apps/trade/keys/alipay_public_key.pem'), 'r').read()
-ALIPAY_URL = 'https://openapi.alipaydev.com/gateway.do'   # 请求的支付宝平台的接口
-ALIPAY_RETURN_URL = 'http://192.168.1.183'   # 支付完成后返回的页面
+ALIPAY_URL = 'https://openapi.alipaydev.com/gateway.do'  # 请求的支付宝平台的接口
+ALIPAY_RETURN_URL = 'http://192.168.1.183'  # 支付完成后返回的页面
 
 # 定时任务配置
-CRONJOBS = [ # 每5分钟执行一次生成主页静态文件
+CRONJOBS = [  # 每5分钟执行一次生成主页静态文件
     ('*/1 * * * *', 'goods.cron.generate_static_index', '>> /home/shilin/Book_Store/bookstore/log/crontab.log')]
 # 解决中文异常问题
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'

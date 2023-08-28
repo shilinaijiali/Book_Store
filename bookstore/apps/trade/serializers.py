@@ -1,5 +1,8 @@
 import time
 
+from alipay import Alipay          # 导入支付包相关的类
+from bookstore import settings
+from alipay.utils import AliPayConfig
 from rest_framework import serializers
 from django.db import transaction
 
@@ -54,10 +57,6 @@ class OrderGoodsOneSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-from alipay import Alipay
-# , AliPayConfig)           # 导入支付包相关的类
-from bookstore import settings
-
 class OrderCreateSerializer(serializers.ModelSerializer):
     """用于订单创建，即订单不存在的情况"""
     user = serializers.HiddenField(
@@ -75,7 +74,7 @@ class OrderCreateSerializer(serializers.ModelSerializer):
             app_private_key_string=app_private_key_string,
             alipay_public_key_string=alipay_public_key_string,
             sign_type='RSA2',   # 指定加密方式，一般为RSA2或RSA
-            # config=AliPayConfig(timeout=15),  # 选择性进行添加，表示请求等待时间为15秒，超时的话会返回错误信息
+            config=AliPayConfig(timeout=15),  # 选择性进行添加，表示请求等待时间为15秒，超时的话会返回错误信息
         )
         order_string = alipay.api_alipay_trade_wap_pay(
             out_trade_no=obj.order_sn,

@@ -5,5 +5,5 @@
     <option name="pathToExecutable" value="F:\Anaconda3\Scripts\black.exe" />
     <option name="sdkUUID" value="87a9d3ba-51e6-4f79-931a-525195c701f8" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.10.12 (sftp://shilin@192.168.232.129:22/home/shilin/.virtualenvs/Book_Store/bin/python)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="conda_bookstore" project-jdk-type="Python SDK" />
 </project>
